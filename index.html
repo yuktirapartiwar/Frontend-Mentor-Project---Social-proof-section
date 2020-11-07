@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Spartan">
+
+    <title>Frontend Mentor | Social proof section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        body {
+            background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+        }
+
+        .container{
+            font-family: Spartan;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 70px 60px 70px 60px;
+            grid-column-gap: 50px;
+            grid-row-gap: 50px;
+        }
+
+        h1 {
+            color: hsl(300, 43%, 22%);
+            font-size: 60px;
+            font-weight:700;
+            text-align:left;
+            margin:0;
+            padding:10px;
+        }
+
+        p{
+            font-size:15px;
+            font-weight:400;
+            text-align:left;
+            margin:0;
+            padding:10px 10px 0 10px;
+            text-align:left;
+            line-height:22px;
+        }
+
+        .ratings{
+            margin:10px;
+            padding:10px;
+        }
+
+        .rating {
+            display: flex;
+            flex-direction: row;
+            background: hsl(300, 24%, 96%);
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .star{
+            padding: 2px;
+        }
+
+        #rating1{
+            margin-left:0;
+            margin-right:80px;
+        }
+
+        #rating2{
+            margin-left: 40px;
+            margin-right:40px;
+        }
+
+        #rating3{
+            margin-left: 80px;
+        }
+
+        .reviews {
+            padding:10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column: 1 / 4;
+            grid-column-gap: 30px;
+        }
+
+        .review {
+            background: hsl(300, 43%, 22%);
+            border-radius: 10px;
+            padding:30px;
+        }
+
+        .reviewer {
+            display:flex;
+            margin-left: 10px;
+            padding: 0;
+        }
+
+
+        #review1{
+            margin-top: 0;
+            margin-bottom:30px;
+        }
+
+        #review2{
+            margin-top: 15px;
+            margin-bottom:15px;
+        }
+
+        #review3{
+            margin-top: 30px;
+        }
+       
+        .profile-picture{
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+
+        }
+
+        footer{
+            
+            text-align: center;
+        }
+
+    </style>
+  </head>
+  <body>
+      <div class="container">
+
+          <div class="intro">
+              <h1>
+                  10,000+ of our users love our products.
+              </h1>
+              <p style="color:hsl(303, 10%, 53%)">
+                  We only provide great products combined with excellent customer service.
+                  See what our satisfied customers are saying about our services.
+              </p>
+          </div>
+
+          <div class="ratings" style="color:hsl(300, 43%, 22%)">
+
+              <div class="rating" id="rating1">
+                  <div class="star">
+                      <img src="./images/icon-star.svg" class=" star" />
+                      <img src="./images/icon-star.svg" class=" star" />
+                      <img src="./images/icon-star.svg" class=" star" />
+                      <img src="./images/icon-star.svg" class=" star" />
+                      <img src="./images/icon-star.svg" class=" star" />
+                  </div>
+                  <p style="font-weight:500">Rated 5 Stars in Reviews</p>
+              </div>
+
+              <div class="rating" id="rating2">
+                  <div class="star">
+                      <img src="./images/icon-star.svg" class=" star" />
+                      <img src="./images/icon-star.svg" class=" star" />
+                      <img src="./images/icon-star.svg" class=" star" />
+                      <img src="./images/icon-star.svg" class=" star" />
+                      <img src="./images/icon-star.svg" class=" star" />
+                  </div>
+                  <p>Rated 5 Stars in Report Guru</p>
+              </div>
+
+
+              <div class="rating" id="rating3">
+                  <div class="star">
+                      <img src="./images/icon-star.svg" class=" star" />
+                      <img src="./images/icon-star.svg" class=" star" />
+                      <img src="./images/icon-star.svg" class=" star" />
+                      <img src="./images/icon-star.svg" class=" star" />
+                      <img src="./images/icon-star.svg" class=" star" />
+                  </div>
+                  <p>Rated 5 Stars in BestTech</p>
+              </div>
+
+          </div>
+
+          <div class="reviews" style="color: hsl(300, 24%, 96%)">
+               <div class="review" id="review1">
+                   <div class="reviewer">
+                       <img src="./images/image-colton.jpg" class="profile-picture" />
+                       <div class="reviewer_name">
+                           <p style="color: hsl(0, 0%, 100%); padding: 0 10px 0 10px ">Colton Smith</p>
+                           <p style="color: hsl(333, 80%, 67%); padding: 0 10px 0 10px">Verified Buyer</p>
+                       </div>
+                   </div>
+                  
+              <p>
+                  "We needed the same printed design as the one we had ordered a week prior.
+                  Not only did they find the original order, but we also received it in time.
+                  Excellent!"
+              </p>
+              </div>
+                  <div class="review" id="review2">
+                      <div class="reviewer">
+                          <img src="./images/image-irene.jpg" class="profile-picture" />
+                          <div class="reviewer_name">
+                              <p style="color: hsl(0, 0%, 100%); padding: 0 10px 0 10px ">Irene Roberts</p>
+                              <p style="color: hsl(333, 80%, 67%); padding: 0 10px 0 10px ">Verified Buyer</p>
+                          </div>
+                      </div>
+
+                      <p>
+                          "Customer service is always excellent and very quick turn around. Completely
+                          delighted with the simplicity of the purchase and the speed of delivery."
+                      </p>
+                  </div>
+
+
+
+              <div class="review" id="review3">
+                  <div class="reviewer">
+                      <img src="./images/image-anne.jpg" class="profile-picture" />
+                      <div class="reviewer_name">
+                          <p style="color: hsl(0, 0%, 100%); padding: 0 10px 0 10px ">Anne Wallace</p>
+                          <p style="color: hsl(333, 80%, 67%); padding: 0 10px 0 10px ">Verified Buyer</p>
+                      </div>
+                  </div>
+
+                  <p>
+                      "Put an order with this company and can only praise them for the very high
+                       standard. Will definitely use them again and recommend them to everyone!"
+                  </p>
+              </div>
+
+          </div>
+          </div>
+              <footer>
+              <div class="attribution">
+                  Challenge by
+                  <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Yukti Rapartiwar</a>.
+              </div>
+          </footer>
+      
+  </body>
+</html>
